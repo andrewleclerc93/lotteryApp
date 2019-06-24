@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body class="site">
+
+    <header class="main-header text-center bg-primary">
+        <h1 class="name py-4 display-4 text-white">Random Lottery Number Generator</h1>
+    </header>
+    <hr>
+    <div class="container">
+
+        <!--  List of lottery games to choose from  -->
+        <div class="text-center">
+            <h2>Select the game:</h2>
+
+            <div class="row p-4">
+                <!-- Powerball -->
+                <div class="card m-1" style="width: 20rem;">
+                    <img src="img/powerball.jpg" class="card-img-top" alt="Powerball game">
+                    <div class="card-body">
+                        <h5 class="card-title">Powerball</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" id="powerball" class="btn btn-primary">Pick Numbers</a>
+                    </div>
+                    <p id="powerball_numbers"></p>
+                </div>
+
+                <!-- Mega Millions -->
+                <div class="card m-1" style="width: 20rem;">
+                    <img src="img/megaMillions.jpg" class="card-img-top" alt="Mega Millions game">
+                    <div class="card-body">
+                        <h5 class="card-title">Mega Millions</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" id="megaMillions" class="btn btn-primary">Pick Numbers</a>
+                    </div>
+                    <p id="megaMillions_numbers"></p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+    <script src="js/lottery.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
