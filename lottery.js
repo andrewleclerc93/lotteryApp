@@ -11,7 +11,7 @@ var powerballNum;
 var pBallGame = {
     balls: 5,
     min: 1,
-    max: 70,
+    max: 69,
     class: 'pball_numbers btn btn-secondary rounded-circle m-1',
     pBallClass: 'pball_numbers btn btn-danger rounded-circle m-1',
     style: 'width: 43.25px; height: 38px',
@@ -22,13 +22,16 @@ var pBallGame = {
 var megaMillGame = {
     balls: 5,
     min: 1,
-    max: 69,
+    max: 70,
     class: 'megaMillions_numbers btn btn-secondary rounded-circle m-1',
     pBallClass: 'megaMillions_numbers btn btn-warning rounded-circle m-1',
     style: 'width: 43.25px; height: 38px',
     element: megaMillions_numbers,
     clearBtn: clear_megaMillions
 };
+
+
+
 
 // Check if number is already in the array
 function inArray(arr, el) {
@@ -76,12 +79,6 @@ function draw(game) {
     clearBtn.style.display = "inline-block";
 }
 
-// Clear any balls from a previous game.
-// function new_game(elementID) {
-//     var element = document.getElementById(elementID);
-//     element.parentNode.removeChild(element);
-// }
-
 function new_game(game) {
     var childNodes = document.getElementById(game).childNodes;
     for (var i = childNodes.length-1; i >= 0; i--) {
@@ -89,6 +86,7 @@ function new_game(game) {
         childNode.parentNode.removeChild(childNode);
     }
 }
+
 
 //   -- EVENT LISTENERS --   //
 
