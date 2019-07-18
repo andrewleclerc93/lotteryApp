@@ -8,7 +8,10 @@ const powerball_numbers = document.getElementById('powerball_numbers');
 var duplicates = [];
 var powerballNum;
 
-var pBallGame = {
+// ---- Objects for generating the Lottery Games ---- //
+
+// Powerball
+var pBallGame = {    
     balls: 5,
     min: 1,
     max: 69,
@@ -19,6 +22,7 @@ var pBallGame = {
     clearBtn: clear_powerball
 };
 
+// Mega Millions
 var megaMillGame = {
     balls: 5,
     min: 1,
@@ -30,8 +34,7 @@ var megaMillGame = {
     clearBtn: clear_megaMillions
 };
 
-
-
+// ---- JavaScript Functions ---- //
 
 // Check if number is already in the array
 function inArray(arr, el) {
@@ -48,7 +51,7 @@ function getRandomIntNoDuplicates(min, max, DuplicateArr) {
         DuplicateArr.push(RandomInt);
         return RandomInt;
     }
-    return getRandomIntNoDuplicates(min, max, DuplicateArr);  //recurse
+    return getRandomIntNoDuplicates(min, max, DuplicateArr);  // recurse
 
 }
 
@@ -79,6 +82,7 @@ function draw(game) {
     clearBtn.style.display = "inline-block";
 }
 
+// New Game: Clear any previously generated lottery numbers
 function new_game(game) {
     var childNodes = document.getElementById(game).childNodes;
     for (var i = childNodes.length-1; i >= 0; i--) {
