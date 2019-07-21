@@ -1,5 +1,5 @@
-const powerball = document.getElementById('powerball');
-const megaMillions = document.getElementById('megaMillions');
+const powerball = document.getElementById('powerball');    // pointer to "Pick Numbers" button
+const megaMillions = document.getElementById('megaMillions');    // pointer to "Pick Numbers" button
 const pball_numbers = document.getElementsByClassName('pball_numbers');
 const mega_numbers = document.getElementsByClassName('megaMillions_numbers');
 const clear_powerball = document.getElementById('clear_powerball');
@@ -12,25 +12,25 @@ var powerballNum;
 
 // Powerball
 var pBallGame = {    
-    balls: 5,
-    min: 1,
-    max: 69,
-    class: 'pball_numbers btn btn-secondary rounded-circle m-1',
-    pBallClass: 'pball_numbers btn btn-danger rounded-circle m-1',
-    style: 'width: 43.25px; height: 38px',
-    element: powerball_numbers,
-    clearBtn: clear_powerball
+    balls: 5,    // total number of balls, minus any powerballs
+    min: 1,    // starting number of ball range
+    max: 69,    // ending number of ball range
+    class: 'pball_numbers btn btn-secondary rounded-circle m-1',    // css styling classes for balls
+    pBallClass: 'pball_numbers btn btn-danger rounded-circle m-1',    // css styling classes for powerballs
+    style: 'width: 43.25px; height: 38px',    // css styles for ball sizing
+    element: powerball_numbers,    // pointer to the DOM where numbers will be generated
+    clearBtn: clear_powerball    // pointer to 'clear' button for this game
 };
 
 // Mega Millions
 var megaMillGame = {
-    balls: 5,
-    min: 1,
+    balls: 5,    
+    min: 1,    
     max: 70,
     class: 'megaMillions_numbers btn btn-secondary rounded-circle m-1',
     pBallClass: 'megaMillions_numbers btn btn-warning rounded-circle m-1',
     style: 'width: 43.25px; height: 38px',
-    element: megaMillions_numbers,
+    element: megaMillions_numbers, 
     clearBtn: clear_megaMillions
 };
 
