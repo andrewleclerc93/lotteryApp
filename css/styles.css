@@ -8,6 +8,7 @@ body {
 header {
     background-image: radial-gradient(circle, #4addff 0%, #4ac3ff 50%, dodgerblue 120%);
     width: 80%;
+    max-width: 1000px;
     border: 2px solid #484a4c;
     border-radius: 10px;
     margin: auto;
